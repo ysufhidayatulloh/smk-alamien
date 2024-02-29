@@ -1,12 +1,38 @@
 "use client";
-import React from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { logo } from "../../public/utils";
+import { pamflate } from "../../public/utils";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Home from "../app/page";
 
 const Navigation = () => {
+  // const handleScroll = (
+  //   e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  // ) => {
+  //   e.preventDefault();
+  //   setShowMenu(false);
+  //   const href = e.currentTarget.href;
+  //   const targetId = href.replace(/.*\#/, "");
+  //   const elem = document.getElementById(targetId);
+  //   elem?.scrollIntoView({
+  //     behavior: "smooth",
+  //   });
+  //   // update the class name of the clicked link
+  //   const links = document.querySelectorAll(".nav-link");
+  //   links.forEach((link) => {
+  //     link.classList.remove("active");
+  //   });
+  //   e.currentTarget.classList.add("active");
+  // };
+
+  // function handlClick(e: any) {
+  //   if (e.target.contains(ref.current)) {
+  //     setShowMenu(false);
+  //   }
+  // }
+
   return (
     <div className="w-full shadow-navbarShadow h-20 lg:h-[11vh] sticky top-0 z-50 bg-primary px-10 ">
       <div className="max-w-container h-full max-auto py-6 font-bodyFont flex items-center justify-between">
@@ -21,7 +47,7 @@ const Navigation = () => {
         <div className="items-center justify-between hidden mdl:inline-flex gap-5 w-[75%]">
           <ul className="flex items-center justify-between text[14px] gap-7">
             <Link
-              href="#home"
+              href=""
               className="flex items-center gap-1 font-medium text-solitude hover:text-secondary cursor-pointer duration-300 nav-ink"
             >
               <motion.li
@@ -62,7 +88,7 @@ const Navigation = () => {
             </Link>
 
             <Link
-              href="#activities"
+              href="#activity"
               className="flex items-center gap-1 font-medium text-solitude hover:text-secondary cursor-pointer duration-300 nav-ink"
             >
               <motion.li
@@ -76,7 +102,7 @@ const Navigation = () => {
             </Link>
 
             <Link
-              href="#tesimony"
+              href="#quote"
               className="flex items-center gap-1 font-medium text-solitude hover:text-secondary cursor-pointer duration-300 nav-ink"
             >
               <motion.li
@@ -85,11 +111,11 @@ const Navigation = () => {
                 transition={{ duration: 0.1, delay: 0.5 }}
               >
                 <span className="text-secondary">04.</span>
-                Testimony
+                Quotes
               </motion.li>
             </Link>
           </ul>
-          <a href="" target="_blank">
+          <a href="./Pamflate.pdf" target="_blank">
             <motion.button
               initial={{ y: -10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
