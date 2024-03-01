@@ -74,6 +74,7 @@ const Studyprogram = () => {
                             src={studyals.img}
                             width={579}
                             height={720}
+                            alt="smk-alamien"
                             className="object-cover h-150 w-65 rounded-lg"
                           />
                           {/* <span className="absolute bottom-0-right-2 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
