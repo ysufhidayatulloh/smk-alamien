@@ -166,18 +166,17 @@ const Activity = () => {
                 Event Photos
               </p>
               <h5 className="text-2xl font-bodyFont font-bold text-primary">
-                Pembukaan MPLS SMK Al-Amien
+                Bangunlah Jiwa Raga
               </h5>
               <p className="bg-primary font-bodyFont text-medium text-secondary md:text-base p-2 md:p-6 rounded-md">
-                Pembukaan MPLS di sekolah kami merupakan kesempatan yang
-                menyenangkan dan inspiratif bagi para siswa baru untuk
-                memperkenalkan mereka pada lingkungan belajar yang inklusif dan
-                memberikan motivasi awal untuk menjalani perjalanan pendidikan
-                mereka dengan semangat dan keyakinan.
+                Setiap warga negara memiliki tanggung jawab untuk menjaga NKRI
+                dengan berperan aktif dalam pembangunan, mematuhi hukum, dan
+                menjunjung tinggi nilai-nilai persatuan, kesatuan, dan Bhinneka
+                Tunggal Ika.
               </p>
               <ul className="flex gap-2 text-medium tracking-wide md:text-medium font-bodyFont wd:gap-5 justify-betwen text-primary">
-                <li>Pembukaan MPLS</li>
-                <li>Masa Pengenalan</li>
+                <li>NKRI</li>
+                <li>Bangsa Indonesia</li>
                 <li>SMK Al-Amien</li>
               </ul>
               {/* <div className="flex gap-4 text-2xl">
